@@ -95,21 +95,25 @@ body {
     flex-direction: column;
 }
 
-.profile-img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 3px solid #22d3ee;
-  box-shadow: 0 0 20px #22d3ee;
-  object-fit: cover;
-  margin-bottom: 15px;
+.profile {
+    border-radius: 50%;
+    border: 3px solid #22d3ee;
+    box-shadow: 0 0 20px #22d3ee;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 2rem;
 }
 
-#hero h1 {
+.hero-name {
     font-size: 3rem;
     color: #22d3ee;
     margin-bottom: 0.5rem;
     animation: glow 2s infinite alternate;
+}
+
+.hero-name span {
+    color: #00adb5;
 }
 
 @keyframes glow {
@@ -117,10 +121,15 @@ body {
     to { text-shadow: 0 0 25px #22d3ee; }
 }
 
-#hero p {
+.hero-role {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     opacity: 0.9;
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .btn, button {
@@ -155,15 +164,17 @@ body {
     font-size: 1.1rem;
 }
 
-/* Skills */
-.skill-list {
+/* Skills & Hobbies */
+.skill-list,
+.hobby-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
 
-.skill-card {
+.skill-card,
+.hobby-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 20px 30px;
@@ -174,39 +185,10 @@ body {
     font-weight: 500;
 }
 
-.skill-card:hover {
+.skill-card:hover,
+.hobby-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
-}
-
-/* Hobbies */
-.hobby-container {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.hobby {
-  text-align: center;
-  transition: 0.3s;
-}
-
-.hobby img {
-  width: 120px;
-  height: 120px;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
-}
-
-.hobby:hover {
-  transform: scale(1.1);
-}
-
-.hobby p {
-  margin-top: 10px;
-  font-weight: bold;
 }
 
 /* Projects */
@@ -293,11 +275,15 @@ body {
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-    #hero h1 {
+    .hero-name {
         font-size: 2.5rem;
     }
 
-    #hero p {
+    .hero-role {
         font-size: 1.2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
     }
 }
