@@ -1,0 +1,149 @@
+<!-- index.html: Personal Portfolio Website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananthitha J Pillai – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h2>My Portfolio Website</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <img src="images/profile.jpeg" alt="Profile" class="profile-img">
+            <h1>Ananthitha J Pillai</h1>
+            <p id="typing"></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="card">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a first-year Cyber Security student at Kristu Jayanti Deemed to be University. I have basic
+                knowledge of networking, programming, and cyber security concepts. I am a quick learner with good
+                problem-solving skills and strong communication abilities. I enjoy building projects and learning new
+                technologies.
+                I am passionate about improving my technical skills and building a successful career in cyber security.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <!-- Repeat for each skill -->
+                <div class="skill-card">Basic networking &amp; cyber security knowledge</div>
+                <div class="skill-card">Understanding of cyber attacks</div>
+                <div class="skill-card">Basic programming &amp; Linux skills</div>
+                <div class="skill-card">Good problem-solving ability</div>
+                <div class="skill-card">Strong communication &amp; teamwork skills</div>
+                <div class="skill-card">Time management</div>
+                <div class="skill-card">Adaptability</div>
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="card">
+      <div class="container">
+        <h2>My Hobbies</h2>
+    
+        <div class="hobby-container">
+    
+          <div class="hobby">
+            <img src="images/reading.jpg" alt="Reading">
+            <p>Reading</p>
+          </div>
+    
+          <div class="hobby">
+            <img src="images/traveling.jpg" alt="Traveling">
+            <p>Traveling</p>
+          </div>
+    
+          <div class="hobby">
+            <img src="images/dancing.png" alt="Dancing">
+            <p>Dancing</p>
+          </div>
+    
+          <div class="hobby">
+            <img src="images/music.avif" alt="Music">
+            <p>Music</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Data will be loaded from Firestore -->
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A Personal Website built using HTML,CSS,JavaScript,and Firebase to showcase my profile
+                        and store user <data value=""></data>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <footer class="footer">
+        <div class="container">
+            <p>Email: <a href="mailto:25BCYC13@kristujayanti.com">25BCYC13@kristujayanti.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/AnanthithaJPillai"
+                    target="_blank">linkedin.com/in/AnanthithaJPillai</a>
+            </p>
+            <p>GitHub: <a href="https://github.com/Ananthitha2007" target="_blank">github.com/Ananthitha2007</a></p>
+            <!-- Optional: Instagram / Twitter -->
+            <p style="margin-top: 1.5rem; color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">
+                &copy; 2026 Ananthitha J Pillai| Portfolio Website
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
